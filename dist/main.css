@@ -47,6 +47,38 @@ header {
     left: 0;
     width: 100%;
 }
+header i {
+    position: relative;
+    transition: 5s;
+}
+header ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    color: white;
+    background-color: #0caa7dad;
+    /* opacity: 0; */
+    /* height: 0; */
+    display: none;
+    z-index: 1000;
+    transition: .5s;
+}
+header i:hover + ul {
+    display: block;
+    /* height: 100%; */
+}
+header ul li {
+    padding: 10px;
+    /* height: 0; */
+    transition: .3s;
+}
+header ul li:hover {
+    background-color: #0caa7d82;
+}
 /* Start Landing */
 .landing {
     background-image: url(../images/hero-bg.png);
